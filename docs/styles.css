@@ -1,3 +1,11 @@
+/* ROOT VARIABLES */
+:root{
+    --purple: purple;
+    --teal: rgb(55, 143, 130);
+    --darkgrey: rgb(104, 104, 104);
+    --lightgrey:  rgb(225, 22, 22);
+}
+
 body {
     min-width: 1080px;
     height: 100%;
@@ -8,13 +16,22 @@ header{
 }
 
 /* GLOBAL */
+button{
+    border: none;
+}
+button:focus{
+    outline: none;
+}
+p{
+    margin: 0px;
+}
 a{
     text-decoration: none;
     color: white;
 }
 a:hover{
     text-decoration: none;
-    color: grey;
+    color: var(--lightgrey);
 }
 
 input{
@@ -25,7 +42,30 @@ input{
 input:focus{
     outline: none;
 }
+.width-50{
+    width: 50%;
+}
 
+.bg-teal{
+    background-color: var(--teal);
+}
+
+.color-teal{
+    color: var(--teal);
+}
+
+.color-darkgrey{
+    color: var(--darkgrey);
+}
+
+.color-white{
+    color: white;
+}
+
+.hover-lightgrey:hover{
+    background-color: var(--darkgrey);
+}
+/* SPECIFICS */
 .tag{
     width: fit-content;
     align-items: center;
@@ -34,24 +74,19 @@ input:focus{
     font-size: small;
     /* text-align: center; */
     padding: 0px 5px;
-    color: rgb(104, 104, 104);
+    color: var(--darkgrey);
     background-color: rgb(238, 239, 240);
-    border:1px solid rgb(91, 91, 91);
+    border:1px solid var(--darkgrey);
     height: 30px;
 }
 
-.width-50{
-    width: 50%;
-}
-
-/* SPECIFICS */
 
 .bar{
     height: 40px;
 }
 
 .icon-background{
-    background-color: purple;
+    background-color: var(--purple);
     height: 30px;
     padding: 5px;
     margin: auto;
