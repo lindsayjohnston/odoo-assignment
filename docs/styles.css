@@ -1,7 +1,6 @@
 body {
     min-width: 1080px;
     height: 100%;
-    background-color: pink;
 }
 
 header{
@@ -18,5 +17,47 @@ a:hover{
     color: grey;
 }
 
+input{
+    border: none;
+    width: 100%;
+}
 
+input:focus{
+    outline: none;
+}
 
+.tag{
+    width: fit-content;
+    align-items: center;
+    /* padding: auto; */
+    /* display: block; */
+    font-size: small;
+    /* text-align: center; */
+    padding: 0px 5px;
+    color: rgb(104, 104, 104);
+    background-color: rgb(238, 239, 240);
+    border:1px solid rgb(91, 91, 91);
+    height: 30px;
+}
+
+.width-50{
+    width: 50%;
+}
+
+/* SPECIFICS */
+
+.bar{
+    height: 40px;
+}
+
+.icon-background{
+    background-color: purple;
+    height: 30px;
+    padding: 5px;
+    margin: auto;
+}
+
+.input-div{
+    background-color: white;
+    width: 100%;
+}
