@@ -107,7 +107,7 @@ input:focus{
 }
 
 .grid-template{
-    border: 1px solid black;
+    border: 1px solid var(--lightgrey2);
     display: grid;
     grid-template-columns: 170px 1fr;
     grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
@@ -121,32 +121,34 @@ input:focus{
     text-align: center;
     display: flex;
     align-items: center;
-    border: 1px black solid;
+    border-right: 1px solid var(--lightgrey2);
+    border-bottom: 1px solid var(--lightgrey2);
     background-color: var(--lightgrey);
 }
 
 #grid-top{
-    border: 1px black solid;
     grid-column: 2/end;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--lightgrey);
+    border-bottom: 1px solid var(--lightgrey2);
 }
 
 #grid-numbers{
     display:grid;
     grid-template-columns: 1fr repeat(55, 0% 1fr);
     grid-column: 2/end;
-    
+   
 }
 
 #grid-numbers > div{
-    border: .5px black solid;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 10px;
+    border-right: 1px solid var(--lightgrey2);
+    border-bottom: 1px solid var(--lightgrey2);
 }
 
 #day1{
@@ -243,7 +245,7 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px black solid;
+    border-right: 1px solid var(--lightgrey2);
 }
 
 #shown-data-columns{
@@ -378,6 +380,11 @@ input:focus{
 
 
 /* SHOWN COLUMNNS */
+.cell{
+    border-right: 1px solid var(--lightgrey2);
+    border-bottom: 1px solid var(--lightgrey2);
+}
+
 #shown1{
     grid-column: 1/span 4;
     grid-row: 1/2;
