@@ -1,72 +1,85 @@
+:root{
+    --purple: rgb(143, 84,124);
+    --teal: rgb(0, 164, 160);
+    --darkgrey: rgb(102, 102, 102);
+    --bg-grey: rgb(242, 244, 246);
+    --lightgrey: rgb(231,231,231);
+    --lightgrey2: rgb(217, 217, 217);
+    --lightgrey3: rgb(203, 203, 203);
+    --lightgrey4: rgb(190, 190, 190);
+    --lightgrey5: rgb(176, 176, 176);
+    --cell-teal-dark: rgb(0, 184, 180);
+    --cell-teal-light: rgb(0, 211, 205);
+    --cell-orange-dark: rgb(255,162,76);
+    --cell-orange-light: rgb(255, 177, 106);
+    --cell-red: rgb(234, 95, 92);
+    --table-yellow: rgb(254, 252, 189);
+    --cell-blue: rgb(84, 192, 242);
+    --cell-purple-dark: rgb(137, 66, 104);
+    --cell-purple-light: rgb(154, 74, 117);
+    --cell-green: rgb(0, 168, 67);
+    --cell-yellow-dark: rgb(249, 202, 0);
+    --cell-yellow-med: rgb(251, 209,0);
+    --cell-yellow-light: rgb(252, 214,0);
+}
+
 /* TOGGLED DATA COL1 */
 #toggled-data-col1{
     grid-row: 1/2;
     grid-column: 1/end;
     display: grid;
     grid-template-columns: 1fr repeat(55, 0% 1fr);
-   
 }
 
 /* DATA */
 
-.td{
-    border-radius: 5px;
-    margin: 3px 2px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 10px;
-}
+
 
 #td1-1{
-    background-color: lightsalmon;
+    background-color:  rgb(255,162,76);
     grid-column: 6/span 4;
     grid-row: 1/2;
    
 }
 
 #td1-2{
-    background-color: teal;
+    background-color: rgb(0, 211, 205);
     grid-column: 10/span 4;
     grid-row: 1/2;
    
 }
 #td1-3{
-    background-color: teal;
+    background-color: rgb(0, 211, 205);
     grid-column: 16/span 8;
     grid-row: 1/2;
    
 }
 #td1-4{
-    background-color: teal;
+    background-color: rgb(0, 211, 205);
     grid-column: 36/span 4;
     grid-row: 1/2;
    
 }
 #td1-5{
-    background-color: lightsalmon;
+    background-color: rgb(255,162,76);
     grid-column: 40/span 14;
     grid-row: 1/2;
    
 }
 #td1-6{
-    background-color: teal;
+    background-color: rgb(0, 211, 205);
     grid-column: 54/span 4;
     grid-row: 1/2;
    
 }
 #td1-7{
-    background-color: teal;
+    background-color: rgb(0, 211, 205);
     grid-column: 94/span 2;
     grid-row: 1/2;
    
 }
 #td1-8{
-    background-color: teal;
+    background-color: rgb(0, 211, 205);
     grid-column: 96/span 2;
     grid-row: 1/2;
    

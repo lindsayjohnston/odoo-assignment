@@ -3,20 +3,41 @@
 }
 /* ROOT VARIABLES */
 :root{
-    --purple: rgb(119, 35, 98);
-    --teal: rgb(55, 143, 130);
-    --darkgrey: rgb(104, 104, 104);
-    --lightgrey: rgb(226, 226, 226);
-    --lightgrey2: rgb(211, 211, 211);
-    --lightgrey3: rgb(172, 172, 172);
-    --lightgrey4: rgb(118, 118, 118);
-    --lightgrey5: rgb(67, 67, 67);
-}
+    --purple: rgb(143, 84,124);
+    --teal: rgb(0, 164, 160);
+    --darkgrey: rgb(102, 102, 102);
+    --bg-grey: rgb(242, 244, 246);
+    --lightgrey: rgb(231,231,231);
+    --lightgrey2: rgb(217, 217, 217);
+    --lightgrey3: rgb(203, 203, 203);
+    --lightgrey4: rgb(190, 190, 190);
+    --lightgrey5: rgb(176, 176, 176);
+    --cell-teal-dark: rgb(0, 184, 180);
+    --cell-teal-light: rgb(0, 211, 205);
+    --cell-orange-dark: rgb(255,162,76);
+    --cell-orange-light: rgb(255, 177, 106);
+    --cell-red: rgb(234, 95, 92);
+    --table-yellow: rgb(254, 252, 189);
+    --cell-blue: rgb(84, 192, 242);
+    --cell-purple-dark: rgb(137, 66, 104);
+    --cell-purple-light: rgb(154, 74, 117);
+    --cell-green: rgb(0, 168, 67);
+    --cell-yellow-dark: rgb(249, 202, 0);
+    --cell-yellow-med: rgb(251, 209,0);
+    --cell-yellow-light: rgb(252, 214,0);
 
+}
+html {
+    height: 100%;
+  
+}
 body {
     min-width: 1080px;
     height: 100%;
+    background-color: var(--bg-grey);
 }
+
+
 
 header{
     background-color: var(--purple);
@@ -65,12 +86,15 @@ input:focus{
     color: var(--darkgrey);
 }
 
+.bg-white{
+    background-color: white;
+}
 .color-white{
     color: white;
 }
 
 .hover-lightgrey:hover{
-    background-color: var(--lightgrey);
+    background-color: var(--bg-grey);
 }
 
 
@@ -84,7 +108,7 @@ input:focus{
     /* text-align: center; */
     padding: 0px 5px;
     color: var(--darkgrey);
-    background-color: rgb(238, 239, 240);
+    background-color: var(--bg-grey);
     border:1px solid var(--darkgrey);
     height: 30px;
 }
@@ -123,7 +147,7 @@ input:focus{
     align-items: center;
     border-right: 1px solid var(--lightgrey2);
     border-bottom: 1px solid var(--lightgrey2);
-    background-color: var(--lightgrey);
+    background-color: var(--bg-grey);
 }
 
 #grid-top{
@@ -131,7 +155,7 @@ input:focus{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--lightgrey);
+    background-color: var(--bg-grey);
     border-bottom: 1px solid var(--lightgrey2);
 }
 
@@ -139,7 +163,7 @@ input:focus{
     display:grid;
     grid-template-columns: 1fr repeat(55, 0% 1fr);
     grid-column: 2/end;
-   
+    background-color: var(--bg-grey);
 }
 
 #grid-numbers > div{
@@ -207,7 +231,7 @@ input:focus{
 }
 #day19{
     grid-column: 73/span 4;
-    background-color: lemonchiffon;
+    background-color: var(--table-yellow);
 }
 #day20{
     grid-column: 77/span 4;
@@ -245,6 +269,12 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid var(--lightgrey2);
+}
+
+#blank-box{
+    grid-row:4/end;
+    grid-column: 1/2;
     border-right: 1px solid var(--lightgrey2);
 }
 
@@ -459,7 +489,7 @@ input:focus{
 }
 #shown19{
     grid-column: 73/span 4;
-    background-color: lemonchiffon;
+    background-color: var(--table-yellow);
     grid-row: 1/2;
 }
 #shown20{
@@ -506,7 +536,6 @@ input:focus{
 #toggled-data-window{
     grid-row: 4/end;
     grid-column: 2/end;
-    background-color: pink;
 }
 
 #toggled-data{
@@ -514,6 +543,24 @@ input:focus{
     grid-column: 2/end;
     display: grid;
     grid-template-rows: 40px 40px 40px 40px 40px;
+    
 }
 
+.toggle-cell{
+    border-right: 1px solid var(--lightgrey2);
+}
+
+.td{
+    border-radius: 5px;
+    margin: 3px 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 10px;
+    z-index: 200;
+}
 

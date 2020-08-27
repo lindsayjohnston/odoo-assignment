@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href='toggled1.css'>
     <link rel="stylesheet" href='toggled2.css'>
+    <link rel="stylesheet" href='toggled3.css'>
+    <link rel="stylesheet" href='toggled4.css'>
+    <link rel="stylesheet" href='toggled5.css'>
     <script src="https://kit.fontawesome.com/de845b3cd6.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -83,7 +86,7 @@
     </header>
 
     <!-- NAME/SEARCH BAR -->
-    <div class="d-flex flex-row justify-content-between bar px-3">
+    <div class="d-flex flex-row justify-content-between bar px-3 bg-white">
         <p style="color: rgb(104, 104, 104)" class="my-auto font-weight-bold">trez</p>
         <div class="d-flex flex-row width-50 border-bottom mt-auto">
             <div class="icon-background mb-1">
@@ -110,7 +113,7 @@
 
 
     <!-- OPTIONS BAR-->
-    <div class="d-flex flex-row justify-content-between bar m-auto px-3">
+    <div class="d-flex flex-row justify-content-between bar m-auto px-3 bg-white">
         <!-- LEFT BUTTONS -->
         <div class="d-flex flex-row my-auto">
             <button class='bg-teal color-white mr-2'>ADD</button>
@@ -181,7 +184,7 @@
 
     <!-- CALENDAR -->
 
-    <div class='grid-template'>
+    <div class='grid-template bg-white'>
         <div id='grid-left'>Default gantt view for x_trez</div>
         <div id='grid-top'>February 2019</div>
         <div id="grid-numbers">
@@ -221,26 +224,28 @@
 
         <div id="primary-label">- Primary</div>
 
+        <div id="blank-box"></div>
+
         <div id="shown-data-columns">
             <div id="sd1" class="sd1 sd-cell">1</div>
             <div id="sd2" class="sd2 sd-cell">2</div>
-            <div id="sd3" class="sd1 sd-cell">3</div>
-            <div id="sd4" class="sd1 sd-cell">4</div>
-            <div id="sd5" class="sd1 sd-cell">5</div>
-            <div id="sd6" class="sd2 sd-cell">6</div>
-            <div id="sd7" class="sd3 sd-cell">7</div>
-            <div id="sd8" class="sd4 sd-cell">8</div>
-            <div id="sd9" class="sd3 sd-cell">9</div>
-            <div id="sd10" class="sd2 sd-cell">10</div>
-            <div id="sd11" class="sd3 sd-cell">11</div>
-            <div id="sd12" class="sd4 sd-cell">12</div>
-            <div id="sd13" class="sd5 sd-cell">13</div>
-            <div id="sd14" class="sd4 sd-cell">14</div>
-            <div id="sd15" class="sd3 sd-cell">15</div>
-            <div id="sd16" class="sd2 sd-cell">16</div>
-            <div id="sd17" class="sd1 sd-cell">17</div>
-            <div id="sd18" class="sd1 sd-cell">18</div>
-            <div id="sd19" class="sd1 sd-cell">19</div>
+            <div id="sd3" class="sd1 sd-cell">1</div>
+            <div id="sd4" class="sd1 sd-cell">1</div>
+            <div id="sd5" class="sd1 sd-cell">1</div>
+            <div id="sd6" class="sd2 sd-cell">2</div>
+            <div id="sd7" class="sd3 sd-cell">3</div>
+            <div id="sd8" class="sd4 sd-cell">4</div>
+            <div id="sd9" class="sd3 sd-cell">3</div>
+            <div id="sd10" class="sd2 sd-cell">2</div>
+            <div id="sd11" class="sd3 sd-cell">3</div>
+            <div id="sd12" class="sd4 sd-cell">4</div>
+            <div id="sd13" class="sd5 sd-cell">5</div>
+            <div id="sd14" class="sd4 sd-cell">4</div>
+            <div id="sd15" class="sd3 sd-cell">3</div>
+            <div id="sd16" class="sd2 sd-cell">2</div>
+            <div id="sd17" class="sd1 sd-cell">1</div>
+            <div id="sd18" class="sd1 sd-cell">1</div>
+            <div id="sd19" class="sd1 sd-cell">1</div>
 
             <div class="cell" id='shown1'></div>
             <div class="cell" id='shown2'></div>
@@ -274,9 +279,10 @@
         </div>
 
 
-        <!-- TOGGLED DATA 1-->
+
         <div id="toggled-data-window">
             <div id="toggled-data">
+                <!-- TOGGLED DATA 1-->
                 <div id="toggled-data-col1">
                     <!-- DATA -->
                     <div id="td1-1" class="td">a</div>
@@ -288,21 +294,196 @@
                     <div id="td1-7" class="td">a</div>
                     <div id="td1-8" class="td">...</div>
 
+                    <!-- COLUMNS -->
+                    <div class="toggle-cell" id='toggled1-1'></div>
+                    <div class="toggle-cell" id='toggled1-2'></div>
+                    <div class="toggle-cell" id='toggled1-3'></div>
+                    <div class="toggle-cell" id='toggled1-4'></div>
+                    <div class="toggle-cell" id='toggled1-5'></div>
+                    <div class="toggle-cell" id='toggled1-6'></div>
+                    <div class="toggle-cell" id='toggled1-7'></div>
+                    <div class="toggle-cell" id='toggled1-8'></div>
+                    <div class="toggle-cell" id='toggled1-9'></div>
+                    <div class="toggle-cell" id='toggled1-10'></div>
+                    <div class="toggle-cell" id='toggled1-11'></div>
+                    <div class="toggle-cell" id='toggled1-12'></div>
+                    <div class="toggle-cell" id='toggled1-13'></div>
+                    <div class="toggle-cell" id='toggled1-14'></div>
+                    <div class="toggle-cell" id='toggled1-15'></div>
+                    <div class="toggle-cell" id='toggled1-16'></div>
+                    <div class="toggle-cell" id='toggled1-17'></div>
+                    <div class="toggle-cell" id='toggled1-18'></div>
+                    <div class="toggle-cell" id='toggled1-19'></div>
+                    <div class="toggle-cell" id='toggled1-20'></div>
+                    <div class="toggle-cell" id='toggled1-21'></div>
+                    <div class="toggle-cell" id='toggled1-22'></div>
+                    <div class="toggle-cell" id='toggled1-23'></div>
+                    <div class="toggle-cell" id='toggled1-24'></div>
+                    <div class="toggle-cell" id='toggled1-25'></div>
+                    <div class="toggle-cell" id='toggled1-26'></div>
+                    <div class="toggle-cell" id='toggled1-27'></div>
+                    <div class="toggle-cell" id='toggled1-28'></div>
                 </div>
-        
-            <!-- TOGGLED DATA 2-->
-                    <div id="toggled-data-col2">
-                        <!-- DATA -->
+
+                <!-- TOGGLED DATA 2-->
+                <div id="toggled-data-col2">
+                    <!-- DATA -->
                     <div id="td2-1" class="td">c</div>
                     <div id="td2-2" class="td">d</div>
                     <div id="td2-3" class="td">agrnlgkrlgrlgklrgklrjgklrjgklrlgjrlgjrgjrl</div>
                     <div id="td2-4" class="td">e</div>
-                      
 
-
+                    <!-- COLUMNS -->
+                    <div class="toggle-cell" id='toggled2-1'>
                     </div>
+                    <div class="toggle-cell" id='toggled2-2'></div>
+                    <div class="toggle-cell" id='toggled2-3'></div>
+                    <div class="toggle-cell" id='toggled2-4'></div>
+                    <div class="toggle-cell" id='toggled2-5'></div>
+                    <div class="toggle-cell" id='toggled2-6'></div>
+                    <div class="toggle-cell" id='toggled2-7'></div>
+                    <div class="toggle-cell" id='toggled2-8'></div>
+                    <div class="toggle-cell" id='toggled2-9'></div>
+                    <div class="toggle-cell" id='toggled2-10'></div>
+                    <div class="toggle-cell" id='toggled2-11'></div>
+                    <div class="toggle-cell" id='toggled2-12'></div>
+                    <div class="toggle-cell" id='toggled2-13'></div>
+                    <div class="toggle-cell" id='toggled2-14'></div>
+                    <div class="toggle-cell" id='toggled2-15'></div>
+                    <div class="toggle-cell" id='toggled2-16'></div>
+                    <div class="toggle-cell" id='toggled2-17'></div>
+                    <div class="toggle-cell" id='toggled2-18'></div>
+                    <div class="toggle-cell" id='toggled2-19'></div>
+                    <div class="toggle-cell" id='toggled2-20'></div>
+                    <div class="toggle-cell" id='toggled2-21'></div>
+                    <div class="toggle-cell" id='toggled2-22'></div>
+                    <div class="toggle-cell" id='toggled2-23'></div>
+                    <div class="toggle-cell" id='toggled2-24'></div>
+                    <div class="toggle-cell" id='toggled2-25'></div>
+                    <div class="toggle-cell" id='toggled2-26'></div>
+                    <div class="toggle-cell" id='toggled2-27'></div>
+                    <div class="toggle-cell" id='toggled2-28'></div>
+
+
 
                 </div>
+
+                <!-- TOGGLED DATA 3-->
+                <div id="toggled-data-col3">
+                    <!-- DATA -->
+                    <div id="td3-1" class="td">a</div>
+                 
+                    <!-- COLUMNS -->
+                    <div class="toggle-cell" id='toggled3-1'>
+                    </div>
+                    <div class="toggle-cell" id='toggled3-2'></div>
+                    <div class="toggle-cell" id='toggled3-3'></div>
+                    <div class="toggle-cell" id='toggled3-4'></div>
+                    <div class="toggle-cell" id='toggled3-5'></div>
+                    <div class="toggle-cell" id='toggled3-6'></div>
+                    <div class="toggle-cell" id='toggled3-7'></div>
+                    <div class="toggle-cell" id='toggled3-8'></div>
+                    <div class="toggle-cell" id='toggled3-9'></div>
+                    <div class="toggle-cell" id='toggled3-10'></div>
+                    <div class="toggle-cell" id='toggled3-11'></div>
+                    <div class="toggle-cell" id='toggled3-12'></div>
+                    <div class="toggle-cell" id='toggled3-13'></div>
+                    <div class="toggle-cell" id='toggled3-14'></div>
+                    <div class="toggle-cell" id='toggled3-15'></div>
+                    <div class="toggle-cell" id='toggled3-16'></div>
+                    <div class="toggle-cell" id='toggled3-17'></div>
+                    <div class="toggle-cell" id='toggled3-18'></div>
+                    <div class="toggle-cell" id='toggled3-19'></div>
+                    <div class="toggle-cell" id='toggled3-20'></div>
+                    <div class="toggle-cell" id='toggled3-21'></div>
+                    <div class="toggle-cell" id='toggled3-22'></div>
+                    <div class="toggle-cell" id='toggled3-23'></div>
+                    <div class="toggle-cell" id='toggled3-24'></div>
+                    <div class="toggle-cell" id='toggled3-25'></div>
+                    <div class="toggle-cell" id='toggled3-26'></div>
+                    <div class="toggle-cell" id='toggled3-27'></div>
+                    <div class="toggle-cell" id='toggled3-28'></div>
+
+                </div>
+
+                <!-- TOGGLED DATA 4-->
+                <div id="toggled-data-col4">
+                    <!-- DATA -->
+                    <div id="td4-1" class="td">a</div>
+                    <div id="td4-2" class="td">a</div>
+                    <div id="td4-3" class="td">a</div>
+                 
+                    <!-- COLUMNS -->
+                    <div class="toggle-cell" id='toggled4-1'>
+                    </div>
+                    <div class="toggle-cell" id='toggled4-2'></div>
+                    <div class="toggle-cell" id='toggled4-3'></div>
+                    <div class="toggle-cell" id='toggled4-4'></div>
+                    <div class="toggle-cell" id='toggled4-5'></div>
+                    <div class="toggle-cell" id='toggled4-6'></div>
+                    <div class="toggle-cell" id='toggled4-7'></div>
+                    <div class="toggle-cell" id='toggled4-8'></div>
+                    <div class="toggle-cell" id='toggled4-9'></div>
+                    <div class="toggle-cell" id='toggled4-10'></div>
+                    <div class="toggle-cell" id='toggled4-11'></div>
+                    <div class="toggle-cell" id='toggled4-12'></div>
+                    <div class="toggle-cell" id='toggled4-13'></div>
+                    <div class="toggle-cell" id='toggled4-14'></div>
+                    <div class="toggle-cell" id='toggled4-15'></div>
+                    <div class="toggle-cell" id='toggled4-16'></div>
+                    <div class="toggle-cell" id='toggled4-17'></div>
+                    <div class="toggle-cell" id='toggled4-18'></div>
+                    <div class="toggle-cell" id='toggled4-19'></div>
+                    <div class="toggle-cell" id='toggled4-20'></div>
+                    <div class="toggle-cell" id='toggled4-21'></div>
+                    <div class="toggle-cell" id='toggled4-22'></div>
+                    <div class="toggle-cell" id='toggled4-23'></div>
+                    <div class="toggle-cell" id='toggled4-24'></div>
+                    <div class="toggle-cell" id='toggled4-25'></div>
+                    <div class="toggle-cell" id='toggled4-26'></div>
+                    <div class="toggle-cell" id='toggled4-27'></div>
+                    <div class="toggle-cell" id='toggled4-28'></div>
+
+                </div>
+
+                <!-- TOGGLED DATA 5-->
+                <div id="toggled-data-col5">
+                    <!-- DATA -->
+                    <div id="td5-1" class="td">a</div>
+                 
+                    <!-- COLUMNS -->
+                    <div class="toggle-cell" id='toggled5-1'>
+                    </div>
+                    <div class="toggle-cell" id='toggled5-2'></div>
+                    <div class="toggle-cell" id='toggled5-3'></div>
+                    <div class="toggle-cell" id='toggled5-4'></div>
+                    <div class="toggle-cell" id='toggled5-5'></div>
+                    <div class="toggle-cell" id='toggled5-6'></div>
+                    <div class="toggle-cell" id='toggled5-7'></div>
+                    <div class="toggle-cell" id='toggled5-8'></div>
+                    <div class="toggle-cell" id='toggled5-9'></div>
+                    <div class="toggle-cell" id='toggled5-10'></div>
+                    <div class="toggle-cell" id='toggled5-11'></div>
+                    <div class="toggle-cell" id='toggled5-12'></div>
+                    <div class="toggle-cell" id='toggled5-13'></div>
+                    <div class="toggle-cell" id='toggled5-14'></div>
+                    <div class="toggle-cell" id='toggled5-15'></div>
+                    <div class="toggle-cell" id='toggled5-16'></div>
+                    <div class="toggle-cell" id='toggled5-17'></div>
+                    <div class="toggle-cell" id='toggled5-18'></div>
+                    <div class="toggle-cell" id='toggled5-19'></div>
+                    <div class="toggle-cell" id='toggled5-20'></div>
+                    <div class="toggle-cell" id='toggled5-21'></div>
+                    <div class="toggle-cell" id='toggled5-22'></div>
+                    <div class="toggle-cell" id='toggled5-23'></div>
+                    <div class="toggle-cell" id='toggled5-24'></div>
+                    <div class="toggle-cell" id='toggled5-25'></div>
+                    <div class="toggle-cell" id='toggled5-26'></div>
+                    <div class="toggle-cell" id='toggled5-27'></div>
+                    <div class="toggle-cell" id='toggled5-28'></div>
+
+                </div>
+
 
 
 
@@ -320,7 +501,7 @@
 
 <!-- DO I NEED? -->
 
-                    <!-- COLUMNS
+<!-- COLUMNS
                     <div id='toggled1-1'></div>
                     <div id='toggled1-2'></div>
                     <div id='toggled1-3'></div>
