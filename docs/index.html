@@ -23,43 +23,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-
-    <script>
-        let popupOpen = false;
-        $(document).ready(function () {
-            // $('#popup').hide();
-            let toggledDown = false;
-            
-            $("#primary-label").click(function () {
-                $("#toggled-data-window").slideToggle();
-                if (toggledDown) {
-                    $(".fa-plus-circle").css({ 'display': 'flex' });
-                    $(".fa-minus-circle").css({ 'display': 'none' });
-                    toggledDown = false;
-                } else {
-                    $(".fa-plus-circle").css({ 'display': 'none' });
-                    $(".fa-minus-circle").css({ 'display': 'flex' });
-                    toggledDown = true;
-                }
-            });
-
-            //OPEN WINDOW
-            $('body').click(function (e) {
-                if (e.target.className == 'tdp' || e.target.className ==
-                    'td') {
-                    const name = (e.target.attributes.name.nodeValue);
-                    const popupName = document.getElementById('data-name');
-                    popupName.textContent = name;
-                    const top = e.pageY + 10;
-                    const left = e.pageX - 75;
-                    $('#popup').offset({ top: top, left: left }).fadeIn();
-                    popupOpen = true;
-                }
-            });
-
-            
-        });
-    </script>
 </head>
 
 <body>
@@ -588,72 +551,7 @@
         </div>
 
 
-
+<script src="app.js"></script>
 </body>
 
 </html>
-
-
-
-<!-- DO I NEED? -->
-
-<!-- COLUMNS
-                    <div id='toggled1-1'></div>
-                    <div id='toggled1-2'></div>
-                    <div id='toggled1-3'></div>
-                    <div id='toggled1-4'></div>
-                    <div id='toggled1-5'></div>
-                    <div id='toggled1-6'></div>
-                    <div id='toggled1-7'></div>
-                    <div id='toggled1-8'></div>
-                    <div id='toggled1-9'></div>
-                    <div id='toggled1-10'></div>
-                    <div id='toggled1-11'></div>
-                    <div id='toggled1-12'></div>
-                    <div id='toggled1-13'></div>
-                    <div id='toggled1-14'></div>
-                    <div id='toggled1-15'></div>
-                    <div id='toggled1-16'></div>
-                    <div id='toggled1-17'></div>
-                    <div id='toggled1-18'></div>
-                    <div id='toggled1-19'></div>
-                    <div id='toggled1-20'></div>
-                    <div id='toggled1-21'></div>
-                    <div id='toggled1-22'></div>
-                    <div id='toggled1-23'></div>
-                    <div id='toggled1-24'></div>
-                    <div id='toggled1-25'></div>
-                    <div id='toggled1-26'></div>
-                    <div id='toggled1-27'></div>
-                    <div id='toggled1-28'></div> 
-                    -->
-<!-- 
-                    <div id='toggled2-1'>01
-                    </div>
-                    <div id='toggled2-2'>02</div>
-                    <div id='toggled2-3'>03</div>
-                    <div id='toggled2-4'>04</div>
-                    <div id='toggled2-5'>05</div>
-                    <div id='toggled2-6'>06</div>
-                    <div id='toggled2-7'>07</div>
-                    <div id='toggled2-8'>08</div>
-                    <div id='toggled2-9'>09</div>
-                    <div id='toggled2-10'>10</div>
-                    <div id='toggled2-11'>11</div>
-                    <div id='toggled2-12'>12</div>
-                    <div id='toggled2-13'>13</div>
-                    <div id='toggled2-14'>14</div>
-                    <div id='toggled2-15'>15</div>
-                    <div id='toggled2-16'>16</div>
-                    <div id='toggled2-17'>17</div>
-                    <div id='toggled2-18'>18</div>
-                    <div id='toggled2-19'>19</div>
-                    <div id='toggled2-20'>20</div>
-                    <div id='toggled2-21'>21</div>
-                    <div id='toggled2-22'>22</div>
-                    <div id='toggled2-23'>23</div>
-                    <div id='toggled2-24'>24</div>
-                    <div id='toggled2-25'>25</div>
-                    <div id='toggled2-26'>26</div>
-                    <div id='toggled2-27'>27</div>
-                    <div id='toggled2-28'>28</div> -->
