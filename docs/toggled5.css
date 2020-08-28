@@ -1,26 +1,4 @@
-:root{
-    --purple: rgb(143, 84,124);
-    --darkgrey: rgb(102, 102, 102);
-    --bg-grey: rgb(242, 244, 246);
-    --lightgrey: rgb(231,231,231);
-    --lightgrey2: rgb(217, 217, 217);
-    --lightgrey3: rgb(203, 203, 203);
-    --lightgrey4: rgb(190, 190, 190);
-    --lightgrey5: rgb(176, 176, 176);
-    --cell-teal-dark: rgb(0, 184, 180);
-    --cell-teal-light: rgb(0, 211, 205);
-    --cell-orange-dark: rgb(255,162,76);
-    --cell-orange-light: rgb(255, 177, 106);
-    --cell-red: rgb(234, 95, 92);
-    --table-yellow: rgb(254, 252, 189);
-    --cell-blue: rgb(84, 192, 242);
-    --cell-purple-dark: rgb(137, 66, 104);
-    --cell-purple-light: rgb(154, 74, 117);
-    --cell-green: rgb(0, 168, 67);
-    --cell-yellow-dark: rgb(249, 202, 0);
-    --cell-yellow-med: rgb(251, 209,0);
-    --cell-yellow-light: rgb(252, 214,0);
-}
+
 
 #toggled-data-col5{
     grid-row: 5/6;
