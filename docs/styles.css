@@ -117,7 +117,7 @@ header{
     opacity: 50%;
 }
 
-/* GLOBAL */
+
 
 .hidden{
     display: none;
@@ -182,8 +182,6 @@ input:focus{
     background-color: var(--bg-grey);
 }
 
-
-/* SPECIFICS */
 .tag{
     width: fit-content;
     align-items: center;
