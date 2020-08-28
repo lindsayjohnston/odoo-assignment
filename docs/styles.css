@@ -500,7 +500,7 @@ input:focus{
     border-radius: 5px;
 }
 #sd19{
-    grid-column: 96/span 4;
+    grid-column: 96/span 2;
     grid-row: 1/2;
     border-radius: 5px;
 }
