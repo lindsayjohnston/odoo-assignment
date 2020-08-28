@@ -36,38 +36,40 @@
 
 
 #td1-1{
-    background-color:  rgb(255,162,76);
+    /* background-color:  rgb(255,162,76); */
     grid-column: 6/span 4;
     grid-row: 1/2;
+    background: linear-gradient(to right, rgb(255,162,76) 60%, rgb(255, 177, 106) 40%);
    
 }
 
 #td1-2{
-    background-color: rgb(0, 211, 205);
+    background: linear-gradient(to left, rgb(0, 211, 205) 70%, rgb(0, 184, 180) 30%);
     grid-column: 10/span 4;
     grid-row: 1/2;
    
 }
+
 #td1-3{
-    background-color: rgb(0, 211, 205);
+    background: linear-gradient(to right, rgb(0, 184, 180) 80%, rgb(0, 211, 205) 20%);
     grid-column: 16/span 8;
     grid-row: 1/2;
    
 }
 #td1-4{
-    background-color: rgb(0, 211, 205);
+    background: linear-gradient(to right, rgb(0, 184, 180) 50%, rgb(0, 211, 205) 50%);
     grid-column: 36/span 4;
     grid-row: 1/2;
    
 }
 #td1-5{
-    background-color: rgb(255,162,76);
-    grid-column: 40/span 14;
+    background: linear-gradient(to left, rgb(255, 177, 106) 70%, rgb(255,162,76)30%);
+    grid-column: 40/span 14;  
     grid-row: 1/2;
    
 }
 #td1-6{
-    background-color: rgb(0, 211, 205);
+    background: linear-gradient(to right, rgb(0, 184, 180) 60%, rgb(0, 211, 205) 40%);
     grid-column: 54/span 4;
     grid-row: 1/2;
    

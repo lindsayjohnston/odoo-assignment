@@ -30,7 +30,7 @@
 }
 
 #td5-1{
-    background-color: rgb(0, 211, 205);
+    background: linear-gradient(to left, rgb(0, 211, 205) 85%, rgb(0, 184, 180) 15%);
     grid-column: 56/span 4;
     grid-row: 1/2;
 }

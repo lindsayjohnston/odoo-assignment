@@ -31,17 +31,17 @@
 }
 
 #td4-1{
-    background-color: rgb(0, 211, 205);
+    background: linear-gradient(to left, rgb(0, 211, 205) 70%, rgb(0, 184, 180) 30%);
     grid-column: 42/span 4;
     grid-row: 1/2;
 }
 #td4-2{
-    background-color: rgb(0, 211, 205);
+    background: linear-gradient(to right, rgb(0, 184, 180) 70%, rgb(0, 211, 205) 30%);
     grid-column: 46/span 4;
     grid-row: 1/2;
 }
 #td4-3{
-    background-color:rgb(251, 209,0);
+    background-color: var(--cell-yellow-light);
     grid-column: 54/span 40;
     grid-row: 1/2;
 }
