@@ -40,8 +40,10 @@
     grid-column: 6/span 4;
     grid-row: 1/2;
     background: linear-gradient(to right, rgb(255,162,76) 60%, rgb(255, 177, 106) 40%);
-   
+    
 }
+
+
 
 #td1-2{
     background: linear-gradient(to left, rgb(0, 211, 205) 70%, rgb(0, 184, 180) 30%);

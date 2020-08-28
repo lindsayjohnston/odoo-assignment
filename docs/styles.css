@@ -44,6 +44,48 @@ header{
     background-color: var(--purple);
 }
 
+#popup{
+    position: absolute;
+    display: none;
+    z-index: 700;
+    height: 100px;
+    width: 150px;
+    background-color: var(--lightgrey);
+    color: var(--darkgrey);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#popup:before{
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 7px solid transparent;
+	border-bottom-color: var(--lightgrey);
+	border-top: 0;
+	margin-left: -7px;
+	margin-top: -7px;
+}
+
+#inner-popup{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#inner-popup > button {
+    font-size: 10px;
+    background-color: var(--purple);
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
 /* GLOBAL */
 
 .hidden{

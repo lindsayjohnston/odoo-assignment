@@ -28,7 +28,6 @@
         $(document).ready(function () {
             let toggledDown= false;
             $("#primary-label").click(function () { 
-                console.log(toggledDown);
                 $("#toggled-data-window").slideToggle();
                 if(toggledDown){
                     $(".fa-plus-circle").css({'display': 'flex'});
@@ -41,16 +40,27 @@
                 }
             });
 
-            $(".td").click(function (){
-                console.log(event.target);
-
-            })
+            $(".td").click(function (e){
+                console.log(e.pageY);
+                const name=(e.target.attributes.name.nodeValue);
+                const popupName= document.getElementById('data-name');
+                popupName.textContent=name;
+                const top= e.pageY + 10;
+                const left= e.pageX - 75;
+                $('#popup').offset({top: top, left: left}).fadeIn();
+            });
         });
     </script>
 </head>
 
 <body>
-
+    <div id='popup'>
+        <div id='inner-popup'>
+            <p id="data-name">Name</p>
+            <button id="plan-btn">Plan Existing</button>
+            <button id="create-btn">Create</button>
+        </div>
+    </div>
     <header class='d-flex flex-row justify-content-between'>
         <ul class="nav my-auto">
             <li class="nav-item ml-3">
@@ -316,16 +326,16 @@
                 <!-- TOGGLED DATA 1-->
                 <div id="toggled-data-col1">
                     <!-- DATA -->
-                    <div id="td1-1" class="td">a</div>
-                    <div id="td1-2" class="td">b</div>
-                    <div id="td1-3" class="td">a</div>
-                    <div id="td1-3-geometry" class="td"></div>
-                    <div id="td1-4" class="td">k</div>
-                    <div id="td1-5" class="td">dmo</div>
-                    <div id="td1-6" class="td">a</div>
-                    <div id="td1-6-geometry" class="td"></div>
-                    <div id="td1-7" class="td">a</div>
-                    <div id="td1-8" class="td">...</div>
+                    <div id="td1-1" class="td" name="a">a</div>
+                    <div id="td1-2" class="td" name="b">b</div>
+                    <div id="td1-3" class="td" name="a">a</div>
+                    <div id="td1-3-geometry" class="td" name="a"></div>
+                    <div id="td1-4" class="td" name='k'>k</div>
+                    <div id="td1-5" class="td" name="dmo">dmo</div>
+                    <div id="td1-6" class="td" name="a">a</div>
+                    <div id="td1-6-geometry" class="td" name="a"></div>
+                    <div id="td1-7" class="td" name="a">a</div>
+                    <div id="td1-8" class="td" name="...">...</div>
 
                     <!-- COLUMNS -->
                     <div class="toggle-cell" id='toggled1-1'></div>
@@ -361,10 +371,10 @@
                 <!-- TOGGLED DATA 2-->
                 <div id="toggled-data-col2">
                     <!-- DATA -->
-                    <div id="td2-1" class="td">c</div>
-                    <div id="td2-2" class="td">d</div>
-                    <div id="td2-3" class="td">agrnlgkrlgrlgklrgklrjgklrjgklrlgjrlgjrgjrl</div>
-                    <div id="td2-4" class="td">e</div>
+                    <div id="td2-1" class="td" name="c">c</div>
+                    <div id="td2-2" class="td" name="d">d</div>
+                    <div id="td2-3" class="td" name="agrnlgkrlgrlgklrgklrjgklrjgklrlgjrlgjrgjrl">agrnlgkrlgrlgklrgklrjgklrjgklrlgjrlgjrgjrl</div>
+                    <div id="td2-4" class="td" name="e">e</div>
 
                     <!-- COLUMNS -->
                     <div class="toggle-cell" id='toggled2-1'>
@@ -404,7 +414,7 @@
                 <!-- TOGGLED DATA 3-->
                 <div id="toggled-data-col3">
                     <!-- DATA -->
-                    <div id="td3-1" class="td">a</div>
+                    <div id="td3-1" class="td" name='a'>a</div>
 
                     <!-- COLUMNS -->
                     <div class="toggle-cell" id='toggled3-1'>
@@ -442,11 +452,11 @@
                 <!-- TOGGLED DATA 4-->
                 <div id="toggled-data-col4">
                     <!-- DATA -->
-                    <div id="td4-1" class="td">a</div>
-                    <div id="td4-1-geometry" class="td"></div>
-                    <div id="td4-2" class="td">a</div>
-                    <div id="td4-3" class="td">a</div>
-                    <div id="td4-3-geometry" class="td"></div>
+                    <div id="td4-1" class="td" name='a'>a</div>
+                    <div id="td4-1-geometry" class="td" name='a'></div>
+                    <div id="td4-2" class="td" name='a'>a</div>
+                    <div id="td4-3" class="td" name='a'>a</div>
+                    <div id="td4-3-geometry" class="td" name='a'></div>
 
                     <!-- COLUMNS -->
                     <div class="toggle-cell" id='toggled4-1'>
@@ -484,7 +494,7 @@
                 <!-- TOGGLED DATA 5-->
                 <div id="toggled-data-col5">
                     <!-- DATA -->
-                    <div id="td5-1" class="td">a</div>
+                    <div id="td5-1" class="td" name='a'>a</div>
 
                     <!-- COLUMNS -->
                     <div class="toggle-cell" id='toggled5-1'>
