@@ -9,7 +9,7 @@
     --bg-grey: rgb(242, 244, 246);
     --lightgrey: rgb(231,231,231);
     --lightgrey2: rgb(217, 217, 217);
-    --lightgrey3: rgb(203, 203, 203);
+    --lightgrey3: rgb(111, 18, 18);
     --lightgrey4: rgb(190, 190, 190);
     --lightgrey5: rgb(176, 176, 176);
     --cell-teal-dark: rgb(0, 184, 180);
@@ -42,6 +42,26 @@ body {
 
 header{
     background-color: var(--purple);
+}
+
+
+.fa-clock{
+    position: relative;
+}
+
+#notification{
+    position: absolute;
+    height: 10px;
+    width: 15px;
+    top: -5px;
+    right: -12px;
+    background-color: var(--teal);
+    border-radius: 40%;
+    font-size: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #popup{
@@ -86,6 +106,17 @@ header{
     margin: 5px;
 }
 
+#data-name{
+    width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+.fa-comments{
+    opacity: 50%;
+}
+
 /* GLOBAL */
 
 .hidden{
@@ -99,6 +130,8 @@ i{
 button{
     border: none;
     background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
 }
 button:focus{
     outline: none;
@@ -188,6 +221,9 @@ input:focus{
     grid-template-columns: 170px 1fr;
     grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
     margin: 0px auto;
+    font-size: 12px;
+    font-weight: bold;
+    border-top-style:inset;
 }
 
 
@@ -200,6 +236,8 @@ input:focus{
     border-right: 1px solid var(--lightgrey2);
     border-bottom: 1px solid var(--lightgrey2);
     background-color: var(--bg-grey);
+    
+    padding: 5px;
 }
 
 #grid-top{
@@ -319,10 +357,12 @@ input:focus{
 #primary-label{
     grid-row: 3/span 1;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     border-right: 1px solid var(--lightgrey2);
+    border-bottom: 1px solid var(--lightgrey2);
     cursor: pointer;
+    padding: 0 5px;
 }
 
 #primary-label > span{
@@ -619,8 +659,18 @@ input:focus{
     align-items: center;
     border: none;
     overflow: hidden;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis; */
     font-size: 10px;
     z-index: 200;
+    cursor: pointer;
 }
+
+.td >p{
+    width: 70%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+    text-align: center;
+    z-index: -1;
+} 
 
