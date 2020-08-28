@@ -13,15 +13,40 @@
     <link rel="stylesheet" href='toggled4.css'>
     <link rel="stylesheet" href='toggled5.css'>
     <script src="https://kit.fontawesome.com/de845b3cd6.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function () {
+            let toggledDown= false;
+            $("#primary-label").click(function () { 
+                console.log(toggledDown);
+                $("#toggled-data-window").slideToggle();
+                if(toggledDown){
+                    $(".fa-plus-circle").css({'display': 'flex'});
+                    $(".fa-minus-circle").css({'display': 'none'});
+                    toggledDown=false;
+                } else {
+                    $(".fa-plus-circle").css({'display': 'none'});
+                    $(".fa-minus-circle").css({'display': 'flex'});
+                    toggledDown=true;
+                }
+            });
+
+            $(".td").click(function (){
+                console.log(event.target);
+
+            })
+        });
+    </script>
 </head>
 
 <body>
@@ -222,7 +247,13 @@
 
         <!-- SHOWN DATA -->
 
-        <div id="primary-label">- Primary</div>
+        <div id="primary-label">
+            <span style="color: var(--darkgrey)">
+                <i class="fas fa-plus-circle fa-xs"></i>
+                <i class="fas fa-minus-circle fa-xs" style="display: none"></i>
+            </span>
+            Primary
+        </div>
 
         <div id="blank-box"></div>
 
@@ -280,7 +311,7 @@
 
 
 
-        <div id="toggled-data-window">
+        <div id="toggled-data-window" style="display: none">
             <div id="toggled-data">
                 <!-- TOGGLED DATA 1-->
                 <div id="toggled-data-col1">
@@ -288,11 +319,11 @@
                     <div id="td1-1" class="td">a</div>
                     <div id="td1-2" class="td">b</div>
                     <div id="td1-3" class="td">a</div>
-                    <div id="td1-3-geometry" class="td" ></div>
+                    <div id="td1-3-geometry" class="td"></div>
                     <div id="td1-4" class="td">k</div>
                     <div id="td1-5" class="td">dmo</div>
                     <div id="td1-6" class="td">a</div>
-                    <div id="td1-6-geometry" class="td" ></div>
+                    <div id="td1-6-geometry" class="td"></div>
                     <div id="td1-7" class="td">a</div>
                     <div id="td1-8" class="td">...</div>
 
@@ -374,7 +405,7 @@
                 <div id="toggled-data-col3">
                     <!-- DATA -->
                     <div id="td3-1" class="td">a</div>
-                 
+
                     <!-- COLUMNS -->
                     <div class="toggle-cell" id='toggled3-1'>
                     </div>
@@ -416,7 +447,7 @@
                     <div id="td4-2" class="td">a</div>
                     <div id="td4-3" class="td">a</div>
                     <div id="td4-3-geometry" class="td"></div>
-                 
+
                     <!-- COLUMNS -->
                     <div class="toggle-cell" id='toggled4-1'>
                     </div>
@@ -454,7 +485,7 @@
                 <div id="toggled-data-col5">
                     <!-- DATA -->
                     <div id="td5-1" class="td">a</div>
-                 
+
                     <!-- COLUMNS -->
                     <div class="toggle-cell" id='toggled5-1'>
                     </div>

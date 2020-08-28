@@ -27,6 +27,9 @@
     --cell-yellow-light: rgb(252, 214,0);
 
 }
+
+
+
 html {
     height: 100%;
   
@@ -37,13 +40,20 @@ body {
     background-color: var(--bg-grey);
 }
 
-
-
 header{
     background-color: var(--purple);
 }
 
 /* GLOBAL */
+
+.hidden{
+    display: none;
+}
+
+i{
+    cursor: pointer;
+}
+
 button{
     border: none;
     background-color: transparent;
@@ -270,6 +280,14 @@ input:focus{
     justify-content: center;
     align-items: center;
     border-right: 1px solid var(--lightgrey2);
+    cursor: pointer;
+}
+
+#primary-label > span{
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #blank-box{
