@@ -64,23 +64,20 @@ header{
     align-items: center;
 }
 
-#current-popup{
-    visibility: hidden;
+#popup{
     position: absolute;
-    bottom: -102px;
-    /* left: -60px; */
-    width: 20px;
-    height: 20px;
+    display: none;
+    z-index: 700;
     height: 100px;
     width: 150px;
     background-color: var(--lightgrey);
     color: var(--darkgrey);
     text-align: center;
     padding: 10px;
-    border-radius: 5px;  
+    border-radius: 5px;
 }
 
-#current-popup:before{
+#popup:before{
     content: '';
 	position: absolute;
 	top: 0;
@@ -92,9 +89,7 @@ header{
 	border-top: 0;
 	margin-left: -7px;
 	margin-top: -7px;
-
 }
-
 
 #inner-popup{
     height: 100%;
@@ -666,7 +661,6 @@ input:focus{
     font-size: 10px;
     z-index: 200;
     cursor: pointer;
-    height: 90%;
 }
 
 .td >p{
@@ -675,6 +669,6 @@ input:focus{
     overflow: hidden;
     font-weight: bold;
     text-align: center;
-    /* z-index: -1; */
+    z-index: -1;
 } 
 
