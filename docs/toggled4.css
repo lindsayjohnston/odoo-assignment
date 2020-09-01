@@ -12,6 +12,13 @@
     grid-row: 1/2;
 }
 
+#td4-1-wrapper{
+    grid-column: 42/span 4;
+    grid-row: 1/2;
+    position: relative;
+    z-index: 700;
+}
+
 #td4-1-geometry{
     position:relative;
     grid-column: 42/span 4;
@@ -34,10 +41,24 @@
     grid-column: 46/span 4;
     grid-row: 1/2;
 }
+
+#td4-2-wrapper{
+    grid-column: 46/span 4;
+    grid-row: 1/2;
+    position: relative;
+    z-index: 700;
+}
 #td4-3{
     background-color: var(--cell-yellow-light);
     grid-column: 54/span 40;
     grid-row: 1/2;
+}
+
+#td4-3-wrapper{
+    grid-column: 54/span 40;
+    grid-row: 1/2;
+    position: relative;
+    z-index: 700;
 }
 
 #td4-3-geometry{

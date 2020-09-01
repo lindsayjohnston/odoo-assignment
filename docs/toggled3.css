@@ -12,6 +12,13 @@
     grid-row: 1/2;
 }
 
+#td3-1-wrapper{
+    grid-column: 40/span 42;
+    grid-row: 1/2;
+    position: relative;
+    z-index: 800;
+}
+
 #toggled3-1{
     grid-column: 1/span 4;
     grid-row: 1/2;
