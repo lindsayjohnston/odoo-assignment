@@ -13,25 +13,11 @@
     grid-row: 1/2;
 }
 
-#td2-1-wrapper{
-    grid-column: 8/span 4;
-    grid-row: 1/2;
-    position: relative;
-    z-index: 900;
-}
-
 #td2-2{
     background: linear-gradient(to right, rgb(0, 184, 180) 90%, rgb(0, 211, 205) 10%);
     grid-column: 38/span 4;
     grid-row: 1/2;
     opacity: 0.6;
-}
-
-#td2-2-wrapper{
-    grid-column: 38/span 4;
-    grid-row: 1/2;
-    position: relative;
-    z-index: 900;
 }
 
 #td2-3{
@@ -40,24 +26,10 @@
     grid-row: 1/2;
 }
 
-#td2-3-wrapper{
-    grid-column: 42/span 6;
-    grid-row: 1/2;
-    position: relative;
-    z-index: 900;
-}
-
 #td2-4{
     background: linear-gradient(to right, rgb(84, 192, 242) 81%, rgb(114, 203, 245) 19%);
     grid-column: 52/span 36;
     grid-row: 1/2;
-}
-
-#td2-4-wrapper{
-    grid-column: 52/span 36;
-    grid-row: 1/2;
-    position: relative;
-    z-index: 900;
 }
 
 #toggled2-1{

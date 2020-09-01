@@ -12,12 +12,6 @@
     grid-column: 56/span 4;
     grid-row: 1/2;
 }
-#td5-1-wrapper{
-    grid-column: 56/span 4;
-    grid-row: 1/2;
-    position: relative;
-    z-index: 600;
-}
 
 #toggled5-1{
     grid-column: 1/span 4;
